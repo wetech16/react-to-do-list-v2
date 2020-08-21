@@ -5,6 +5,14 @@ import uuidv4 from 'uuid/v4'
 export default function TodoUi() {
     const [todos, setTodos] = useState([{ id: 1, name: 'Todo 1' , complete: false}])
     const todoRef = useRef()
+
+    useEffect(() => {
+        effect
+        return () => {
+            cleanup
+        }
+    }, [input])
+
     function handleAddTodo () {
         const name = todoRef.current.value
         if (name ==='') return
